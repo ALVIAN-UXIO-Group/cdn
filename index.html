@@ -1,21 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLOUD - ALVIAN UXIO</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Skylen CDN • Statistics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+    :root {
+        --bg: #f7f9fc;
+        --card: #ffffff;
+        --text: #1a1a1a;
+        --subtext: #686868;
+        --primary: #4da6ff;
+        --radius: 22px;
+        --shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    body {
+        margin: 0;
+        background: var(--bg);
+        font-family: "Inter", sans-serif;
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        color: var(--subtext);
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .stats-grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .card {
+        background: var(--card);
+        padding: 25px;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-4px);
+    }
+
+    .value {
+        font-size: 32px;
+        font-weight: 800;
+        margin-top: 5px;
+    }
+
+    .label {
+        font-size: 14px;
+        color: var(--subtext);
+    }
+
+    .links {
+        margin-top: 35px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        background: var(--primary);
+        color: white;
+        border-radius: var(--radius);
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: 600;
+        box-shadow: var(--shadow);
+        transition: 0.2s;
+    }
+
+    .btn:hover {
+        opacity: 0.85;
+    }
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h1>ALVIAN UXIO Inc.</h1>
-        <p>A professional developer and web developer and ui/ux designer</p>
-        <div class="links">
-            <a href="https://alvianuxio.my.id" class="link">Visit Site</a>
-            <a href="https://api.alvianuxio.my.id" class="link">Visit Api Documentation</a>
-            <a href="https://stats.uptimerobot.com/rRuJDKYIFZ" class="link">All Status Site</a>
-        </div>
+
+<h1>Skylen CDN Statistics</h1>
+<div class="subtitle">Live Repository Analytics — Secure & Privacy Friendly</div>
+
+<div class="stats-grid">
+    <div class="card">
+        <div class="value" id="totalFiles">0</div>
+        <div class="label">Total Files</div>
     </div>
+    <div class="card">
+        <div class="value" id="totalSize">0 MB</div>
+        <div class="label">Total Size</div>
+    </div>
+    <div class="card">
+        <div class="value" id="avgSize">0 KB</div>
+        <div class="label">Average File Size</div>
+    </div>
+    <div class="card">
+        <div class="value" id="totalFolders">0</div>
+        <div class="label">Total Folders</div>
+    </div>
+</div>
+
+<div class="links">
+    <a class="btn" href="https://store.skylen.my.id" target="_blank">Visit Skylen Store</a>
+    <a class="btn" href="https://api.skylen.my.id" target="_blank">Visit Skylen APIs</a>
+</div>
+
+<script>
+const _0x672182=_0x5aff;function _0x5aff(_0x37d1c2,_0x2c7b49){const _0x15a83f=_0x15a8();return _0x5aff=function(_0x5aff0f,_0x1e8761){_0x5aff0f=_0x5aff0f-0xcc;let _0x38f588=_0x15a83f[_0x5aff0f];return _0x38f588;},_0x5aff(_0x37d1c2,_0x2c7b49);}(function(_0x18ebc1,_0x3a4d9c){const _0x5b4191=_0x5aff,_0x59df6d=_0x18ebc1();while(!![]){try{const _0x6e710a=-parseInt(_0x5b4191(0xe5))/0x1+parseInt(_0x5b4191(0xd1))/0x2*(-parseInt(_0x5b4191(0xda))/0x3)+-parseInt(_0x5b4191(0xe4))/0x4*(-parseInt(_0x5b4191(0xdb))/0x5)+-parseInt(_0x5b4191(0xd2))/0x6+parseInt(_0x5b4191(0xce))/0x7+-parseInt(_0x5b4191(0xe1))/0x8+-parseInt(_0x5b4191(0xe0))/0x9*(-parseInt(_0x5b4191(0xd4))/0xa);if(_0x6e710a===_0x3a4d9c)break;else _0x59df6d['push'](_0x59df6d['shift']());}catch(_0x326429){_0x59df6d['push'](_0x59df6d['shift']());}}}(_0x15a8,0xa3732));const OWNER=_0x672182(0xe7),REPO=_0x672182(0xd8);function _0x15a8(){const _0x5b3ebe=['cdn','\x20MB','1629cMzrfo','5xvqBRy','file','dir','json','getElementById','9199944PRECdd','9136552beDhlL','textContent','toFixed','2669268rMgGWZ','956850awnbGn','type','ALVIAN-UXIO-Group','filter','avgSize','1056671JZKBMO','totalFolders','totalFiles','810SslnrO','5379564JwJBix','\x20KB','30gisDSU','path','size','length'];_0x15a8=function(){return _0x5b3ebe;};return _0x15a8();}async function fetchRepoFiles(_0x28a1fb=''){const _0x10b32e=_0x672182,_0x41d138='https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/'+_0x28a1fb,_0x1c19cb=await fetch(_0x41d138);return _0x1c19cb[_0x10b32e(0xde)]();}async function getAllFiles(_0x2e821c=''){const _0x42ecb9=_0x672182,_0x2a728b=await fetchRepoFiles(_0x2e821c);let _0x5dfbdf=[];for(const _0x193849 of _0x2a728b){if(_0x193849['type']===_0x42ecb9(0xdc))_0x5dfbdf['push'](_0x193849);else{if(_0x193849[_0x42ecb9(0xe6)]===_0x42ecb9(0xdd)){const _0x40274e=await getAllFiles(_0x193849[_0x42ecb9(0xd5)]);_0x5dfbdf=_0x5dfbdf['concat'](_0x40274e);}}}return _0x5dfbdf;}function formatSize(_0x1e9034){const _0x5bb85b=_0x672182;if(_0x1e9034<0x400)return _0x1e9034+'\x20B';if(_0x1e9034<0x400*0x400)return(_0x1e9034/0x400)[_0x5bb85b(0xe3)](0x1)+_0x5bb85b(0xd3);return(_0x1e9034/(0x400*0x400))[_0x5bb85b(0xe3)](0x2)+_0x5bb85b(0xd9);}async function loadStats(){const _0x5a42f0=_0x672182,_0x48ce4b=await fetchRepoFiles(''),_0x3bc699=_0x48ce4b[_0x5a42f0(0xcc)](_0x56fff2=>_0x56fff2[_0x5a42f0(0xe6)]===_0x5a42f0(0xdd))['length'],_0x40f39c=await getAllFiles(''),_0x3f5cf4=_0x40f39c['reduce']((_0x2b3b6d,_0x438e8b)=>_0x2b3b6d+_0x438e8b[_0x5a42f0(0xd6)],0x0),_0x27a956=_0x3f5cf4/(_0x40f39c[_0x5a42f0(0xd7)]||0x1);document[_0x5a42f0(0xdf)](_0x5a42f0(0xd0))[_0x5a42f0(0xe2)]=_0x40f39c['length'],document[_0x5a42f0(0xdf)]('totalSize')[_0x5a42f0(0xe2)]=formatSize(_0x3f5cf4),document[_0x5a42f0(0xdf)](_0x5a42f0(0xcd))[_0x5a42f0(0xe2)]=formatSize(_0x27a956),document[_0x5a42f0(0xdf)](_0x5a42f0(0xcf))[_0x5a42f0(0xe2)]=_0x3bc699;}loadStats();
+</script>
+
 </body>
 </html>
